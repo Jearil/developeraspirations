@@ -1,0 +1,7 @@
+<nav>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" {{ if or (eq $currentPage.RelPermalink .URL) (eq $currentPage.RelPermalink (printf "%s/" .URL)) }}class="current" {{ end }}>{{ .Name }}</a>
+    {{ if not (eq .Name "Author") }}-{{ end }}
+    {{ end }}
+</nav>

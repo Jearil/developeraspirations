@@ -1,0 +1,54 @@
+baseURL = 'https://developeraspirations.com/'
+languageCode = 'en-us'
+title = 'Aspirations of a Software Developer'
+theme = 'aspirations'
+copyright = 'Colin Miller'
+
+[params]
+  description = 'A site including a blog with the ramblings of a software developer living in the bay area, doing coding things.'
+  email = 'jearil@gmail.com'
+  twitter_username = 'Jearil'
+  github_username = 'Jearil'
+  disqusShortname = 'developeraspirations'
+  googleAnalytics = 'G-Q4CG6PGZ87'
+
+  [params.author]
+    name = 'Colin Miller'
+    short_name = 'Colin'
+    email = 'jearil@gmail.com'
+    twitter = 'Jearil'
+    bluesky = 'jearil.bsky.social'
+    linkedin = 'https://linkedin.com/in/colintmiller/'
+    pronouns = 'He/Him'
+    mastodon = 'https://fosstodon.org/@Jearil'
+    bio = "Colin is a person writing words about software development. He works at Google but his views are different from Google's."
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'author'
+    name = 'Author'
+    url = '/author/'
+    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = 'base16-snazzy'
+    noClasses = true
+    lineNos = false
+    codeFences = true
+    guessSyntax = true

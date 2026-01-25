@@ -1,0 +1,30 @@
+<head>
+    {{ partial "analytics.html" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+    {{ $main := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $main.RelPermalink }}">
+
+    {{ $styles := resources.Get "css/styles.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+    {{ $gruvbox := resources.Get "css/gruvbox-dark.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $gruvbox.RelPermalink }}">
+
+    {{ $ascii := resources.Get "css/ascii-box.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $ascii.RelPermalink }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+    <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
+    {{ with .OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+    {{ end }}
+</head>

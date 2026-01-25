@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Iosevka Aile Iaso";
+    font-weight: 100 900;
+    src: local("Iosevka Aile Iaso"), url(/assets/fonts/iosevka/iosevka-aile-regular.woff2) format("woff2"), url(/assets/fonts/iosevka/iosevka-aile-italic.woff2) format("woff2"), url(/assets/fonts/iosevka/iosevka-aile-bold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Iosevka Curly Iaso';
+    font-weight: 100 900;
+    src: url("/assets/fonts/iosevka/iosevka-curly.ttc");
+}
+
+@font-face {
+    font-family: 'Iosevka Etoile Iaso';
+    font-weight: 100 900;
+    src: url("/assets/fonts/iosevka/iosevka-etoile.ttc");
+}
+
+$link-color: #FFA8CE;
+$current-page-color: #f08553;
+$code-color: #ce630c;
+
+body {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin: 0;
+    font-family: "Iosevka Aile Iaso";
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+a {
+    cursor: pointer;
+    color: $link-color;
+    text-decoration: none;
+}
+
+a:visited {
+    cursor: pointer;
+    color: $link-color;
+    text-decoration: none;
+}
+
+::selection {
+    background: #d3869b;
+}
+
+.center {
+    text-align: center;
+}
+
+.current,
+a:visited.current {
+    color: $current-page-color;
+}
+
+
+.container {
+    max-width: 60rem;
+}
+
+.container,
+.container-fluid {
+    margin: 1em auto;
+    padding: 0 1rem;
+}
+
+.hack blockquote,
+.hack code,
+.hack footer,
+.hack header,
+.hack li,
+.hack p,
+.hack section,
+.hack ul {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hack blockquote,
+.hack ol,
+.hack p,
+.hack ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hack hr {
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    border: 0;
+    margin: 20px 0;
+}
+
+.hack hr::after {
+    content: "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.hack li {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+
+.hack li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hack ul > li:after {
+    content: "-";
+}
+
+.hack ol > li {
+    display: list-item;
+}
+
+.hack blockquote {
+    position: relative;
+    padding-left: 17px;
+    padding-left: 2ch;
+    overflow: hidden;
+    line-height: 20px;
+ }
+.hack blockquote:after {
+    content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+}
+
+.hack pre {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.125em;
+}
+
+.svg-icon {
+    width: 1.25em;
+    height: 1.25em;
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.right-text-container img {
+    margin-right: 20px;
+    height: auto;
+    max-width: 100%;
+    float: left;
+}
+
+.image-left {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}

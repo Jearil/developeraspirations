@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div id="iphone-back-nav" class="iphone-back-nav" style="display:none;">
+    <a href="{{ site.BaseURL }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="feather feather-chevron-left">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        Back
+    </a>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (/iPhone/.test(navigator.userAgent)) {
+            document.getElementById('iphone-back-nav').style.display = 'block';
+        }
+    });
+</script>
+
+<h1>{{ .Title }}</h1>
+
+{{ if .Date }}
+<p>{{ .Date.Format "Jan 02 2006" }}
+    {{ with .Params.author }} - <a href="{{ "author/" | relURL }}">{{ . }}</a>{{ end }}
+</p>
+{{ end }}
+<hr>
+{{ .Content }}
+{{ end }}

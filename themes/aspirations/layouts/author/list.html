@@ -1,0 +1,24 @@
+{{ define "main" }}
+<h1>{{ .Site.Params.author.name }}</h1>
+<h3>Pronouns: {{ .Site.Params.author.pronouns }}</h3>
+<h3>Email: {{ .Site.Params.author.email }}</h3>
+<h3>Blue Sky: <a href="https://bsky.app/profile/{{ .Site.Params.author.bluesky }}">{{ .Site.Params.author.bluesky }}</a></h3>
+<h3>Twitter: <a href="https://www.x.com/{{ .Site.Params.author.twitter }}">{{ .Site.Params.author.twitter }}</a></h3>
+<h3>Mastodon: <a href="{{ .Site.Params.author.mastodon }}">{{ .Site.Params.author.mastodon }}</a></h3>
+<h3>LinkedIn: <a href="{{ .Site.Params.author.linkedin }}">{{ .Site.Params.author.linkedin }}</a></h3>
+<hr>
+
+<p><img src="{{ "assets/images/colin.jpeg" | relURL }}" alt="Colin's Picture"></p>
+
+<p>{{ .Site.Params.author.bio }}</p>
+
+{{ .Content }}
+
+<h2>Posts</h2>
+<ul>
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ range $posts }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>
+{{ end }}

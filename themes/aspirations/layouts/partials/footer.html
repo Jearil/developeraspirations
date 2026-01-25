@@ -1,0 +1,20 @@
+<hr />
+<footer>
+    <blockquote>
+        Copyright {{ now.Format "2006" }} Colin Miller. My opinions are my own and not representative of anyone I've ever worked for or will work for.
+    </blockquote>
+    <div class="center">
+        <p class="feed-subscribe">
+            {{ with .Site.GetPage "rssxml" }}
+            <a href="{{ .Permalink }}">
+            {{ else }}
+            <a href="{{ "index.xml" | relURL }}">
+            {{ end }}
+                <img class="svg-icon" src="{{ "assets/images/rss.svg" | relURL }}" />
+                <span>Subscribe</span>
+            </a>
+        </p>
+    </div>
+
+    {{ partial "disqus.html" . }}
+</footer>
