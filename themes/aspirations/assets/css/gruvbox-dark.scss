@@ -5,6 +5,9 @@ $header2: #A1C854;
 $header3: #F19846;
 $header4: #CDCD23;
 
+$codeBlock: #689d6a;
+$code: #a5f829;
+
 $strong: #F19846;
 
 .gruvbox-dark {
@@ -32,6 +35,11 @@ $strong: #F19846;
 
 .gruvbox-dark pre {
     border: none
+}
+
+// Inline code only (not inside pre blocks)
+.gruvbox-dark :not(pre) > code {
+    color: $code;
 }
 
 .gruvbox-dark .progress-bar-filled:after,
