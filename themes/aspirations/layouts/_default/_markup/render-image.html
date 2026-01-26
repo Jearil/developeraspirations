@@ -1,0 +1,6 @@
+<figure class="medium-image">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" onclick="openLightbox(this)">
+  {{- if .Text }}
+  <figcaption>{{ .Text }}</figcaption>
+  {{- end }}
+</figure>
