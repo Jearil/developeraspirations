@@ -1,6 +1,6 @@
 +++
-date = '2026-02-28T11:04:17-08:00'
-draft = true
+date = '2026-03-01T15:03:17-08:00'
+draft = false
 title = 'Commodore 64'
 +++
 I came across an advertisement over the holidays about the [Commodore 64 Ultimate](https://www.commodore.net/product-page/commodore-64-ultimate-basic-beige-batch2). I was amused at the time and thought, while neat, it wasn't worth getting. Compared to anything modern, the Commodore 64's hardware is obviously underpowered. With a 1 Mhz MOS 6510 and 64KB of RAM, no modern OS could run on it. And yet, that limitation is intriguing.
@@ -38,7 +38,7 @@ The manual is fascinating. It begins by describing how Vision Basic came to be o
 
 As I've stated, part of my fascination with the Commodore 64 in 2026 is as a programmer. It is something that I think I can appreciate now so much more than I would have had I owned one as a child. Having been a programmer for over 20 years, that experience makes the device's limitations more interesting to me than they would have been when I was younger. Beyond **Vision Basic**, the Commodore 64 comes with two main ways to program it that were included with the device itself. The first is of course `BASIC`, which loads every time you turn it on. The second is MOS 6502 assembly, a much more difficult yet performant way to code.
 
-When you bought a Commodore 64, it came with a fairly large spiral-bound user manual. That manual not only contains the operating instructions for the computer but also a primer on `BASIC` programming. It does not touch on assembly, being primarily intended for home use. However, a similar book was created that one could buy called *Commodore 64 Programmer's Reference Guide*. Unfortunately these are rare and often in poor condition. However, a wonderful individual in Scotland who has a site called [Pickled Light](https://pickledlightprojects.com/) has recreated the *Programmer's Reference Guide* and *User's Guide* in a printable PDF along with [instructions](https://pickledlightprojects.com/documents/c64-guides/) on how to have the professional printed for relatively little cost. He reformatted all of the original text in order to be printable. I did this myself and the results are pretty remarkable.
+When you bought a Commodore 64, it came with a fairly large spiral-bound user manual. That manual not only contains the operating instructions for the computer but also a primer on `BASIC` programming. It does not touch on assembly, being primarily intended for home use. However, a similar book was created that one could buy called *Commodore 64 Programmer's Reference Guide*. Unfortunately these are rare and often in poor condition. However, a wonderful individual in Scotland who has a site called [Pickled Light](https://pickledlightprojects.com/) has recreated the *Programmer's Reference Guide* and *User's Guide* in a printable PDF along with [instructions](https://pickledlightprojects.com/documents/c64-guides/) on how to have it professionally printed for relatively little cost. He reformatted all of the original text in order to be printable. I did this myself and the results are pretty remarkable.
 
 ![The Commodore 64 Programmer's Reference Guide from Pickled Light printed via Lulu](c64_Programmers_Guide.jpg)
 
