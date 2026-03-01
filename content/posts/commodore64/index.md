@@ -9,7 +9,7 @@ It was in the back of my mind and I kept thinking about it. I missed out on the 
 
 ![The Commodore 64 Ultimate](commodore64.png)
 
-A few goals came to my mind after ordering the Commodore 64 Ultimate. The first relates to just learning. Older systems such as the Commodore 64 are ultimately simple enough to learn the majority of with a reasonable amount of time and effort. In a world where we're pushed to learn and do less and less with the advent of AI, diving deeper into a tech can be a wonderful experience.
+A few goals came to my mind after ordering the Commodore 64 Ultimate. The first relates to just learning. Older systems such as the Commodore 64 are ultimately simple enough to learn the majority of with a reasonable amount of time and effort. In a world where we're pushed to learn less and do less with the advent of AI, diving deeper into a tech can be a wonderful experience.
 
 As a lifelong programmer, the second thought was about writing programs. I had only dabbled in `BASIC` and never touched 6502 assmebly. The constraints of the system sounded interesting however and I wanted to know what could be done using modern software and techniques on retro hardware.
 
